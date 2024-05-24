@@ -2,13 +2,85 @@
 <html>
 	<head>
 		<title>Intro to Javascript</title>
+		<script> 
+			function plu2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= num1 + num2;
+			}
+			function MiNumbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= num1 - num2;
+			}
+			function Mal2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= num1 * num2;
+			}
+			function Div2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= num1 / num2;
+			}
+			function Dur2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= (num1 + num2) / 2;
+			}
+			function Pot2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= (num1 ** num2)
+			}
+			function Wur2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= (num1) ** (1/num2)
+			}
+			function Log2Numbers()
+			{
+				var num1 = document.getElementById('num1').value * 1.0;
+				var num2 = document.getElementById('num2').value * 1.0;
+				document.getElementById("result").innerHTML= Math.log(num1) / Math.log(num2);
+			}
+		</script>
 	</head>
 	<body>
 		<h1 id="myheading">
-		This is a Heading for your oarschloch Javascript
-	</h1>
-	<button onclick="document.getElementById('myheading').innerHTML='Weg is du Oarschloch'">
-		Klick mich doch du Oarschloch
+		This is a Heading for your Taschenrechner
+		</h1>
+			<form 
+				<label for="num1">Erste Ziffer:</label>
+				<input type="text" id="num1" name="num1"><br><br>
+				<label for="num2">Zweite Ziffer:</label>
+				<input type="text" id="num2" name="num2"><br><br>
+			</form>
+	<button onclick="plu2Numbers()" >
+		Plus
+	<button onclick="MiNumbers()">
+		Minus
+		<button onclick="Mal2Numbers()" >
+		Mal
+	<button onclick="Div2Numbers()">
+		Dividieren
+		<button onclick="Dur2Numbers()">
+		Durchschnitt
+		<button onclick="Pot2Numbers()">
+		Potential
+		<button onclick="Wur2Numbers()">
+		Wurzel
+		<button onclick="Log2Numbers()">
+		Logarithmus
 	</button>
+	<p id="result">
+	</p>
 	</body>
 </html>
